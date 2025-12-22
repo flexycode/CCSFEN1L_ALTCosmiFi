@@ -1,0 +1,44 @@
+{
+  "name": "ccsfen1l_altcosmifi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "<img src=\"images/image-2.png\">  \r ### Group Name: [Artificial Ledger Technology](https://github.com/Artificial-Ledger-Technology)  🇵🇭\r ### Subject & Section: 🧚‍♂️ [CCPRGG2L COM23P](https://www.youtube.com/watch?v=dQw4w9WgXcQ) 🧚‍♀️    \r ### Professor: 👦 [Jay D. Abaleta](https://www.youtube.com/watch?v=Zi_XLOBDo_Y)                    \r ### No. of Units: [3 Units](https://www.youtube.com/watch?v=d_Z-neEBuWM) \r ### Prerequisite: [CCPRGG1L Fundamentals of Programming](https://github.com/flexycode/CCPRGG1L_FUNDAMENTALS_COM23P)       \r ### Course Repo: [CCPRGG2L Intermediate Programming](https://github.com/flexycode/CCPRGG2L_INTERMEDIATE_PROGRAMMING)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexycode/CCPRGG2L_INTERMEDIATE_FINAL_EXAM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flexycode/CCPRGG2L_INTERMEDIATE_FINAL_EXAM/issues"
+  },
+  "homepage": "https://github.com/flexycode/CCPRGG2L_INTERMEDIATE_FINAL_EXAM#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0",
+    "next": "^16.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "hardhat": "^3.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}
