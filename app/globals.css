@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black;
+  overflow-x: hidden;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+/* Animated Star Field */
+.stars,
+.stars2,
+.stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Ccircle fill='%23FFF' cx='400' cy='400' r='1'/%3E%3Ccircle fill='%23FFF' cx='100' cy='100' r='0.5'/%3E%3Ccircle fill='%23FFF' cx='200' cy='600' r='0.8'/%3E%3Ccircle fill='%23FFF' cx='600' cy='200' r='0.6'/%3E%3Ccircle fill='%23FFF' cx='700' cy='700' r='1'/%3E%3Ccircle fill='%23FFF' cx='50' cy='450' r='0.7'/%3E%3Ccircle fill='%23FFF' cx='350' cy='150' r='0.5'/%3E%3Ccircle fill='%23FFF' cx='550' cy='550' r='0.9'/%3E%3Ccircle fill='%23FFF' cx='750' cy='350' r='0.6'/%3E%3Ccircle fill='%23FFF' cx='150' cy='750' r='0.8'/%3E%3C/svg%3E") repeat;
+  background-size: 200px 200px;
+  animation: animateStars 100s linear infinite;
+  opacity: 0.8;
+}
+
+.stars2 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Ccircle fill='%23FFF' cx='200' cy='200' r='1.2'/%3E%3Ccircle fill='%23FFF' cx='50' cy='50' r='0.8'/%3E%3Ccircle fill='%23FFF' cx='300' cy='100' r='1'/%3E%3Ccircle fill='%23FFF' cx='100' cy='300' r='0.7'/%3E%3Ccircle fill='%23FFF' cx='350' cy='350' r='1.1'/%3E%3C/svg%3E") repeat;
+  background-size: 150px 150px;
+  animation: animateStars 80s linear infinite;
+  opacity: 0.6;
+}
+
+.stars3 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Ccircle fill='%23FFF' cx='300' cy='300' r='1.5'/%3E%3Ccircle fill='%23FFF' cx='100' cy='200' r='1'/%3E%3Ccircle fill='%23FFF' cx='500' cy='400' r='1.2'/%3E%3C/svg%3E") repeat;
+  background-size: 250px 250px;
+  animation: animateStars 120s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes animateStars {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+/* Shooting Stars */
+.shooting-stars span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  animation: shootingStar 8s linear infinite;
+  opacity: 0;
+}
+
+.shooting-stars span:nth-child(1) {
+  top: 10%;
+  left: 80%;
+  animation-delay: 0s;
+}
+
+.shooting-stars span:nth-child(2) {
+  top: 30%;
+  left: 60%;
+  animation-delay: 3s;
+}
+
+.shooting-stars span:nth-child(3) {
+  top: 50%;
+  left: 90%;
+  animation-delay: 6s;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-400px) translateY(400px) rotate(-45deg);
+    opacity: 0;
+  }
+}
