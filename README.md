@@ -57,7 +57,7 @@ Follow these steps to set up the project locally:
 This repository is the successor to the **Intermediate Programming Final Exam** project. As we transition into the world of Web3, we carry forward the principles of clean code and robust architecture.
 
 *   **Original Repository**: [CCPRGG2L_INTERMEDIATE_FINAL_EXAM](https://github.com/flexycode/CCPRGG2L_INTERMEDIATE_FINAL_EXAM)
-*   **Group**: Artificial Ledger Technology (ALT)
+*   **Team**: Artificial Ledger Technology (ALT)
 
 ---
 *Built with 💙 by the ALT Team*
